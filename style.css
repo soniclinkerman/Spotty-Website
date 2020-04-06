@@ -14,10 +14,13 @@ nav{
     padding: 1em 0;
 }
 
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
+
+@media(max-width: 500px){
+    .sticky{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
 }
 
 ul{
@@ -97,6 +100,16 @@ a:hover{
     transform: rotate(5deg);
 }
 
+@media(max-width: 500px){
+    .box{
+        transition: none;
+    }
+
+    .box:hover{
+        transform: none
+    }
+}
+
 /* End of Section 3 */
 
 /* Footer */
@@ -107,40 +120,6 @@ a:hover{
 }
 
 /* End of Footer */
-
-
-
-/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
-/***********************************************************************
- *  Green Background
- **********************************************************************/
-.green{
-    background: #56B870; /* Old browsers */
-    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
-    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
-}
-
-/***********************************************************************
- *  Red Background
- **********************************************************************/
-
-
-/***********************************************************************
- *  Yellow Background
- **********************************************************************/
-.yellow{
-    background: #F3AAAA; /* Old browsers */
-    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
-    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
-}
 
 /***********************************************************************
  *  Blue Background
