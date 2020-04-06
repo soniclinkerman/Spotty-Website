@@ -13,15 +13,18 @@ img{
 /* Navigation Section  */
 
 nav{
-    padding: 2em;
+    padding: 1em;
 }
 ul{
-    display: grid;
+    display: flex;
     font-size: 1.2em;
-    grid-template-columns: 100px 100px 100px auto;
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+li{
+    padding: 10px;
 }
 
 a{
@@ -35,7 +38,7 @@ a:hover{
 
 
 .contact{
-    justify-self: end;
+    margin-left: auto;
 }
 
 /* End of Navigation Section  */
@@ -91,6 +94,7 @@ a:hover{
 }
 
 /* End of Footer */
+
 
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
