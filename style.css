@@ -1,20 +1,25 @@
 body{
     margin: auto 0;
+    font-family: 'Inter', sans-serif;
 }
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
     grid-template-rows: 1fr;
 }
-img{
-    height: 120px;
-    width: 100px;
-}
+
 /* Navigation Section  */
 
 nav{
-    padding: 1em;
+    padding: 1em 0;
 }
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 ul{
     display: flex;
     font-size: 1.2em;
@@ -44,51 +49,59 @@ a:hover{
 /* End of Navigation Section  */
 
 /* Section 2  */
-
-.zone {
-    cursor:pointer;
-    color:#FFF;
-    border-radius:4px;
-    border:1px solid #bbb;
-    transition: all 0.3s linear;
+.project-text{
+    text-align: center;
 }
 
-.zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+
+.cover{
+    width: 30rem;
 }
 
 .red{
-    text-align: center;
-    padding: 15em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-size: cover; 
+    border-bottom: 2px solid #60b8ff;
 }
 
 /* End of Section 2 */
 
 /* Section 3  */
 
-.blue{
+.projects{
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
     justify-content: center;
     grid-gap: 3em;
-    padding: 1em;
-
+    margin-bottom: 2em;
 }
 
-.background{
-    background-color: #444344;
-    padding: 8em 7em;
-    justify-self: center;
+.box > img{
+    width: 100%;
+}
+
+
+.box{
+    border: 2px solid #5bb2fa;
+    background-color: #f7fcfd;
+    padding: 100px;
+    margin: 15px;
+    transition: 0.5s;
+}
+
+.box:hover{
+    cursor: pointer;
+    transform: rotate(5deg);
 }
 
 /* End of Section 3 */
 
 /* Footer */
 
-.yellow{
+.copyright{
     color:white;
     text-align: center;
 }
@@ -114,15 +127,7 @@ a:hover{
 /***********************************************************************
  *  Red Background
  **********************************************************************/
-.red{
-    background: #C655BE; /* Old browsers */
-    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
-    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
-}
+
 
 /***********************************************************************
  *  Yellow Background
@@ -149,3 +154,5 @@ a:hover{
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
 }
+
+

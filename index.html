@@ -4,14 +4,20 @@
         <title>Spotty Website</title>
         <link rel="stylesheet" type="text/css" href="style.css"/>
 
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
 
-        <div class="container">
+        <div class="container animated fadeInUp">
         
-            <nav class="zone green">
+            <nav class="zone main-nav blue sticky">
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Products</a></li>
@@ -20,26 +26,29 @@
                 </ul>
             </nav>
                 
-            <section class="zone red">
-                COVER
+            <section class="red">
+                <img class="cover" src="img/undraw.png"/>
+         
             </section>
 
 
-            <section class=" blue">
-                <img class="background" src="img/files_2.png"/>
-                <img class="background" src="img/server_2_2.png"/>
-                <img class="background" src="img/monitor_settings_2.png"/>
-                <img class="background" src="img/server_3.png"/>
+            <h1 class="project-text">PROJECTS</h1>
+            <section class="projects animated fadeInRight delay-1s">
+                
+                <div class="box"><img class="background" src="img/files_2.png"/></div>
+                <div class="box"><img class="background" src="img/server_2_2.png"/></div>
+                <div class="box"><img class="background" src="img/monitor_settings_2.png"/></div>
+                <div class="box"><img class="background" src="img/server_3.png"/></div>
 
-                <img class="background" src="img/data_storage_2_2.png"/>
-                <img class="background" src="img/monitor_coding_2.png"/>
-                <img class="background" src="img/desktop_analytics_2.png"/>
-                <img class="background" src="img/server_safe_2.png"/>
+                <div class="box"><img class="background" src="img/data_storage_2_2.png"/></div>
+                <div class="box"><img class="background" src="img/monitor_coding_2.png"/></div>
+                <div class="box"><img class="background" src="img/desktop_analytics_2.png"/></div>
+                <div class="box"><img class="background" src="img/server_safe_2.png"/></div>
      
             </section>
 
-            <footer class="yellow">
-                <p>Zaltick 2020</p>
+            <footer class="blue">
+                <p class="copyright">Zaltick © 2020</p>
             </footer>
 
         </div>
