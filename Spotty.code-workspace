@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Spotty Website",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Spotty Website"
+	}
+}
